@@ -1,0 +1,154 @@
+$font-weight: (
+    "light": 300,
+    "regular": 400,
+    "medium": 500,
+    "semibold": 600
+);
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-tp {
+    padding-top: 30px;
+    .navbar-nav {
+        li{
+            padding-left: 35px;
+        }
+        .active {
+            color: purple !important;
+            font-weight: map-get($font-weight , semibold ) !important;
+        }
+        .nav-link{
+            color:gray;
+            font-weight: map-get($font-weight , light );
+        }
+    }
+}
+
+.descripsion {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-weight: map-get($font-weight, light );
+    color:  rgb(85, 85, 85);
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.welcome{
+    .header{
+        font-weight: map-get($font-weight , semibold ) !important;
+        color: navy;
+        font-size: 45px;
+        line-height: 60px;
+        margin-top: 150px;
+    }
+}
+
+.pricing{
+    background: whitesmoke;
+    padding: 70px 0 70px 0;
+    margin-top: 70px;
+    .header{
+        font-weight: map-get($font-weight , semibold ) !important;
+        color: navy;
+        font-size: 45px;
+        line-height: 60px;
+        margin-top: 70px;
+    }
+    .master-card{
+        padding: 30px;
+        border-radius: 22px;
+        .btn{
+            width: 100%;
+            margin-top: 100px;
+        }
+        .name{
+            font-size: 18; 
+            font-weight: map-get($font-weight, medium );
+        }
+        .price{
+            font-size: 36px;
+            font-weight: map-get($font-weight, semibold );
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+        .support{
+            font-size: 16px;
+            font-weight: map-get($font-weight, light );
+            margin-bottom: 40px;
+        }
+    }
+    .basic-card {
+        @extend .master-card;
+        background: white;
+        .name{
+            color: navy;
+        }
+        .price{
+            color: navy; 
+
+        }
+        .support{
+            color: gray;
+        }
+    }
+    .most-card {
+        @extend .master-card;
+        background: purple;
+        .btn-primary{
+            background: rgb(10, 209, 209);
+            margin-top: 170px;
+        }
+        .name{
+            color: white;
+        }
+        .price {
+            color: white;
+        }
+        .support{
+            color: rgb(234, 158, 253);
+        }
+    }
+}
+
+.foot{
+    .copyright{
+        color: grey;
+        font-size: 14px;
+        margin-top: 120px;
+    }
+}
+
+.input{
+    padding: 80px 0 80px 0;
+    background: rgb(233, 233, 233);
+    .input-card{
+        padding: 35px;
+        background: rgb(255, 255, 255);
+        border-radius: 22px;
+        .nama{
+            margin-top: 20px;
+        }
+        .alamat{
+            margin-top: 20px;
+        }
+        .tanggal {
+            margin-top: 20px;
+        }
+        .nominal{
+            margin-top: 20px;
+        }
+        .warning {
+            margin-top: 10px;
+            font-size: 16px;
+            color: red;
+            font-weight: map-get($font-weight, medium );
+        }
+    }
+}
+
+.btn{
+    width: 100%;
+    margin-top: 35px;
+}
